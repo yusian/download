@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>Bitrade</title>
+<style>
+.message{
+    font-size: 17px;
+    padding: 20px;
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+       <h1 class="message">{{message}}</h1>
+    </div>
+</body>
+<script language="javascript">
+var app = new Vue({
+   el:'#app',
+   data:{
+      message:''
+   }
+})
+var userAgent = window.navigator.userAgent;
+//app.message = userAgent;
+//app.message = window.navigator.userAgent;
+if (userAgent.indexOf('iPhone') == -1){
+   alert('请安装包仅支持iOS系统，请在iPhone中打开！');
+   app.message = '当前设备不支持安装';
+}else{
+   try{ 
+      window.location.href = "itms-services://?action=download-manifest&url=https://yusian.github.io/download/bitrade/release/20190320/manifest.plist"
+   }catch(e){
+      alert(e);
+   }
+   app.message = '如果没有跳转或弹出安装提示，请点击右上角功能键，用Safari打开';
+}
+console.log(window.navigator.userAgent);
+</script>
+</html>
