@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compileBitcode</key>
+	<false/>
+	<key>destination</key>
+	<string>export</string>
+	<key>manifest</key>
+	<dict>
+		<key>appURL</key>
+		<string>https://yusian.github.io/download/coinx/developer/20190320/Coinx.ipa</string>
+		<key>displayImageURL</key>
+		<string>https://yusian.github.io/download/coinx/image.57.png</string>
+		<key>fullSizeImageURL</key>
+		<string>https://yusian.github.io/download/coinx/image.512.png</string>
+	</dict>
+	<key>method</key>
+	<string>development</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.bitMore.kashjack.www</key>
+		<string>Developer_All</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>iPhone Developer</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>QE37V35L39</string>
+	<key>thinning</key>
+	<string>&lt;none&gt;</string>
+</dict>
+</plist>
